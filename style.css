@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: black;
+    background-position: center;
+    
+}
+.flex{
+    height: 50vh;
+    width: 100vw;
+    display:  flex;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+   
+height: 100vh;
+width: 100vw;
+display: flex;
+flex-direction: column;
+gap: 5vh;
+position: absolute;
+align-items: center;
+z-index: 10;
+}
+.bubbles 
+{
+    position: relative;
+    display: flex;
+}
+.bubbles span 
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(150vh) scale(-0.5);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+.heading>h1{
+    text-align: center;
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 56px;
+    font-weight: bold;
+}
+.aim>h2{
+    font-size: 30px;
+    background-image: linear-gradient(to left,orange, yellow, red, orange, yellow, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.aim>p{
+    color: white;
+    font-size: 1.5rem;
+}
+.members>h1{
+    background-image: linear-gradient(to left,orange, yellow, red, orange, yellow, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.members>ul>li{
+    color: white;
+    font-size: 1.5rem;
+}
+.tech>h2{
+    background-image: linear-gradient(to left,orange, yellow, red, orange, yellow, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tech>ul>li{
+    color: white;
+    font-size: 1.5rem;
+}
+.concept>h3{
+    background-image: linear-gradient(to left,orange, yellow, red, orange, yellow, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+}.concept>p{
+    color: white;
+    font-size: 1.5rem;
+}
+.demo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 30px;
+    color: white;
+}.demo>p>a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 3rem;
+}.demo>p>a:hover{
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.5);
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+}
